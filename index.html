@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mis Write-Ups</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Bienvenidos</h1>
+    <p id="typing-text" class="texto-contenedor"></p>
+    <a href="pdf.html" class="boton-redireccion">Ingresar</a>
+  </div>
+
+  <script>
+    const texto = `En este sitio encontrarás una colección de mis write-ups,\n documentados con detalle para aprender y compartir.\n \n >yorve.csec`;
+
+
+
+    const p = document.getElementById('typing-text');
+    let i = 0;
+
+    function escribir() {
+      if (i < texto.length) {
+        if (texto.charAt(i) === '\n') {
+          p.innerHTML += '<br>';
+        } else {
+          p.innerHTML += texto.charAt(i);
+        }
+        i++;
+        setTimeout(escribir, 25);
+      }
+    }
+
+    escribir();
+  </script>
+</body>
+</html>

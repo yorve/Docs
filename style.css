@@ -1,0 +1,56 @@
+body, html {
+  font-family: 'Fira Code', monospace;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  background-color: #008042;
+  color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.texto-contenedor {
+  white-space: pre-wrap;
+  overflow: hidden;
+    min-height: 6em;
+  margin: 20px auto;
+  font-size: 1rem;
+  
+}
+
+
+.boton-redireccion {
+  background-color: gold;
+  color: #053510;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.boton-redireccion:hover {
+  background-color: #01250f;
+  color: #fff;
+}
+
+.cursor-parpadeo {
+  animation: blink 0.8s infinite;
+  color: #f6f54d;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
